@@ -1,5 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppWithRouterAccess from './AppWithRouterAccess';
 
 function App() {
   return (
@@ -10,6 +13,10 @@ function App() {
           Hi there
           Edit oh my....finally...<code>src/App.js</code> and save to reload.
         </p>
+        <Router>
+          <AppWithRouterAccess/>
+        </Router>
+
         <a
           className="App-link"
           href="https://reactjs.org"
